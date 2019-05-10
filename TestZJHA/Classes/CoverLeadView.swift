@@ -8,8 +8,7 @@
 
 import UIKit
 import SnapKit
-
-class CoverLeadView: UIView {
+public class CoverLeadView: UIView {
     var imgArray:[String]?
     var rectArray:[CGRect]?
     override init(frame: CGRect) {
