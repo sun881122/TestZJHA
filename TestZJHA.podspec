@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TestZJHA'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TestZJHA.'
+  s.summary          = 'TestZJHA.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+                        just test
                        DESC
 
   s.homepage         = 'https://github.com/sun881122/TestZJHA'
@@ -31,12 +31,13 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'TestZJHA/Classes/**/*'
-  
+  s.swift_version = '4.0'
   # s.resource_bundles = {
   #   'TestZJHA' => ['TestZJHA/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+s.dependency 'SnapKit'
 end

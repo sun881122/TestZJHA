@@ -1,0 +1,6 @@
+framework module TestZJHA {
+  umbrella header "TestZJHA-umbrella.h"
+
+  export *
+  module * { export * }
+}

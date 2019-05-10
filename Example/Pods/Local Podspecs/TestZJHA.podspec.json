@@ -1,0 +1,22 @@
+{
+  "name": "TestZJHA",
+  "version": "0.1.0",
+  "summary": "A short description of TestZJHA.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sun881122/TestZJHA",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sun881122": "1569442102@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/sun881122/TestZJHA.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "TestZJHA/Classes/**/*"
+}
