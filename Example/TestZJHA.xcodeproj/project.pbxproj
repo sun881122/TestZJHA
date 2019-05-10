@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		06982ABD86FAC3DC76EC3AFE /* Pods_TestZJHA_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestZJHA_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10D4AEAC051CAF08032FC57E /* Pods-TestZJHA_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestZJHA_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TestZJHA_Tests/Pods-TestZJHA_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3E6A303A2EA6461C8E3702EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3E6A303A2EA6461C8E3702EE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TestZJHA_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestZJHA_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,9 +44,9 @@
 		8994B40252C55C12088CA132 /* Pods_TestZJHA_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestZJHA_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B178E2ACF61F142EF027F44 /* Pods-TestZJHA_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestZJHA_Tests.release.xcconfig"; path = "Target Support Files/Pods-TestZJHA_Tests/Pods-TestZJHA_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B47065D59A3C385C4A85B192 /* Pods-TestZJHA_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestZJHA_Example.debug.xcconfig"; path = "Target Support Files/Pods-TestZJHA_Example/Pods-TestZJHA_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C31D5D7B2E7A91E6C2250ABF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C31D5D7B2E7A91E6C2250ABF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D4B80869D06D7382AE54F5F5 /* Pods-TestZJHA_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestZJHA_Example.release.xcconfig"; path = "Target Support Files/Pods-TestZJHA_Example/Pods-TestZJHA_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FB75118ED6424973B8A13C55 /* TestZJHA.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TestZJHA.podspec; path = ../TestZJHA.podspec; sourceTree = "<group>"; };
+		FB75118ED6424973B8A13C55 /* TestZJHA.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TestZJHA.podspec; path = ../TestZJHA.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				10D4AEAC051CAF08032FC57E /* Pods-TestZJHA_Tests.debug.xcconfig */,
 				8B178E2ACF61F142EF027F44 /* Pods-TestZJHA_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -291,10 +291,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TestZJHA_Example/Pods-TestZJHA_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/TestZJHA/TestZJHA.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TestZJHA.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

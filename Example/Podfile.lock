@@ -1,15 +1,22 @@
 PODS:
-  - TestZJHA (0.1.0)
+  - SnapKit (4.2.0)
+  - TestZJHA (0.1.0):
+    - SnapKit
 
 DEPENDENCIES:
   - TestZJHA (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SnapKit
 
 EXTERNAL SOURCES:
   TestZJHA:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TestZJHA: 808bd77f302b373a7eaa3187503c2e543fcc238b
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  TestZJHA: a6ec9226099fa0a898957abb6e08f38d511c4d60
 
 PODFILE CHECKSUM: f00652024f9c1e770e75e1595ed2b12211c9d5dc
 
