@@ -12,10 +12,10 @@ import SnapKit
 open class CoverLeadView: UIView {
     var imgArray:[String]?
     var rectArray:[CGRect]?
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(bgView)
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dissmis))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dissmis))
         bgView.addGestureRecognizer(tap)
         bgView.snp.makeConstraints { (make) in
             make.top.bottom.left.right.equalToSuperview()
@@ -41,22 +41,22 @@ open class CoverLeadView: UIView {
         }
        
     }
-    lazy var imgView: UIImageView = {
+   public lazy var imgView: UIImageView = {
         let temp = UIImageView(frame: .zero)
 //        temp.isUserInteractionEnabled = true
 //        temp.contentMode = .scaleAspectFill
         return temp
     }()
-    lazy var bgView: UIView = {
+  public  lazy var bgView: UIView = {
         let temp = UIView(frame: .zero)
         temp.backgroundColor = UIColor.black
         temp.alpha = 0.7
         return temp
     }()
-    required init?(coder aDecoder: NSCoder) {
+    public  required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    func show()  {
+   public func show()  {
         let window = UIApplication.shared.keyWindow
         window?.addSubview(self)
         self.snp.makeConstraints { (make) in
@@ -65,7 +65,7 @@ open class CoverLeadView: UIView {
         }
         
     }
-    @objc func dissmis()  {
+    @objc public func dissmis()  {
         if (imgArray?.count)! > 0 {
             imgArray?.remove(at: 0)
             rectArray?.remove(at: 0)

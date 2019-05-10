@@ -7,14 +7,16 @@
 //
 
 import UIKit
-
+import TestZJHA
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-      
+        let v = CoverLeadView(frame: .zero)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
