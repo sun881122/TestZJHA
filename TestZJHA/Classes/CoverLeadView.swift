@@ -8,7 +8,8 @@
 
 import UIKit
 import SnapKit
-public class CoverLeadView: UIView {
+
+open class CoverLeadView: UIView {
     var imgArray:[String]?
     var rectArray:[CGRect]?
     override init(frame: CGRect) {
@@ -24,7 +25,7 @@ public class CoverLeadView: UIView {
       
         
     }
-    func reloadCoverImg(imgName:[String],rect:[CGRect])  {
+  public  func reloadCoverImg(imgName:[String],rect:[CGRect])  {
         imgArray = imgName
         rectArray = rect
         if imgName.count >= 1{
